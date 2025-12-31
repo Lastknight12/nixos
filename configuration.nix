@@ -13,7 +13,8 @@
       ./programs/supergfxd.nix
       ./packages/dev.nix
       ./packages/default.nix
-      ./gc.nix
+      ./system/gc.nix
+      ./system/gnome.nix
     ];
 
   # Bootloader.
