@@ -8,10 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./hardware/default.nix
-      ./packages/default.nix
-      ./programs/default.nix
-      ./system/default.nix
+      ./hardware
+      ./development
+      ./programs
+      ./system
     ];
 
   # Bootloader.
@@ -128,5 +128,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
-
 }
