@@ -18,7 +18,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   # fix backlight has no effect issue
-  boot.kernelParams = [ "acpi_backlight=native" ];
+  boot.kernelParams = [
+    "acpi_backlight=native"
+    "acpi_osi=Linux"
+  ];
+
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;

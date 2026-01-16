@@ -1,11 +1,10 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./shells
+  environment.systemPackages = [
+    (pkgs.callPackage /etc/nixos/development/shell-picker {})
+    pkgs.vscode
   ];
 
-  environment.systemPackages = with pkgs; [ 
-    vscode
-  ];
+  environment.variables.DEV_SHELLS = "/etc/nixos/development/shells";
 }
