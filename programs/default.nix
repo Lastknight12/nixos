@@ -8,6 +8,7 @@
     ./git.nix
     ./docker.nix
     ./zsh.nix
+    ./devbox.nix
   ];
 
   environment.systemPackages = with pkgs; [ 
@@ -17,5 +18,6 @@
     obs-studio
     pavucontrol
     htop
+    vscode
   ];
 }
