@@ -9,13 +9,13 @@
     ./docker.nix
     ./zsh.nix
     ./devbox.nix
+    ./flatpak.nix
   ];
 
   environment.systemPackages = with pkgs; [ 
     discord 
     telegram-desktop
     neofetch
-    obs-studio
     pavucontrol
     htop
     vscode
